@@ -14,6 +14,10 @@ class `MarcosMarcolin\RabbitMQ\Consumer\ConfigClient`.
 ### Example of custom options configuration
 
 ``` php
+
+use MarcosMarcolin\RabbitMQ\Consumer\ConfigClient;
+use Workerman\RabbitMQ\Client;
+
 $options = (new ConfigClient())->setHost('192.168.33.128')->setHeartbeat(25.0)->toArray();
 (new Client($options))->connect()->then(function (Client $client) {
     return $client->channel();

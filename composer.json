@@ -1,0 +1,25 @@
+{
+    "name": "marcosmarcolin/rabbitmq-consumer",
+    "description": "Example of a RabbitMQ queue consumer with Workerman.",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Marcos Marcolin",
+            "email": "marcos@ixcsoft.com.br"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "MarcosMarcolin\\RabbitMQ\\Consumer\\": "src/"
+        }
+    },
+    "config": {
+        "platform": {
+            "php": "7.3"
+        }
+    },
+    "require": {
+        "workerman/rabbitmq": "^1.0"
+    }
+}
